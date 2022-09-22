@@ -4,6 +4,11 @@ h2 {
     color:red;
     font-family:sans-serif;
 }
+
+.header_class
+{
+    color:aqua;
+}
 p {
     color:darkcyan;
 }

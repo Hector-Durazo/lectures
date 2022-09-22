@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome to CSE 494</title>
+
+        <style>
+            table{
+                border: 2px solid black;
+                width: 500px;
+                border-collapse: collapse;
+            }
+            th, td{
+                border: 1px solid black;
+                text-align: center;
+                padding: 5px;
+            }
+            th{
+                background-color: gold;
+            }
+        </style>
+    </head>
+    <body>
+        Hello, world!
+        <h1>This is the largest headline</h1>
+        <h2>huevo</h2>
+
+        An Unordered List:
+        <ul>
+            <li> One Item</li>
+            <li> Two Item</li>
+        </ul>
+        An ordered List:
+        <ol>
+            <li>First Item</li>
+            <li>Second Item</li>
+        </ol>
+
+        <p>
+            This is a paragraph
+        </p>
+
+        <p style = 'color: green; background-color: yellow;'>
+            this is anohter paragraph with <span
+            style = 'color: maroon; background-color: rgb(255,0,0);'> some text inside a span
+        </span>
+        </p>
+        <img src = "sparky.jpg"
+        alt = "Sparkey" width = "300">
+
+        <img src="sparky.jpg" alt  = "Sparky"
+        Style="max-width:300px" width = "50%">
+
+        <hr>
+        <hr style="border:1px dashed red"/>
+
+        <h1>SCAI Faculty</h1>
+        <table>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Received PhD from</th>
+            </tr>
+            <tr>
+                <td>Chris</td>
+                <td>Bryan</td>
+                <td>UC Davis</td>
+            </tr>
+            <tr>
+                <td>Ross</td>
+                <td>Maciejewski</td>
+                <td>Purdue</td>
+            </tr>
+            <tr>
+                <td>Huan</td>
+                <td>Liu</td>
+                <td>USC</td>
+            </tr>
+            <tr>
+                <td>Adam</td>
+                <td>Doupe</td>
+                <td>UC Santa Barbara</td>
+            </tr>
+        </table>
+
+        <br><br>
+        <button onclick="hello();">Hello</button>
+        <script>
+            function hello(){
+                alert('hello there!');
+            }
+        </Script>
+
+        <button class="click_button"
+        id="goodbyebutton">Goodbye!</button>
+        <script>
+            document.addEventListener('DOMContentLoaded', function()
+            {
+                document.querySelector('#goodbyebutton').onclick = goodbye;
+
+            });
+            function goodbye()
+            {
+                alert('Goodbye. old friend...');
+            }
+        </script>
+    </body>
+</html>
